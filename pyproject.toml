@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "blogapp"
+version = "0.1.0"
+description = "A simple Django blog API"
+authors = ["Louis Agyapong <47106199+louis-agyapong@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11"
+django = "^4.1.2"
+python-decouple = "^3.6"
+django-extensions = "^3.2.1"
+ipython = "^8.6.0"
+dj-database-url = "^1.0.0"
+djangorestframework = "^3.14.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.982"
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
